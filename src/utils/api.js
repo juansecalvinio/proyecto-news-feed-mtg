@@ -16,7 +16,7 @@ const api = {
         }
     },
 
-    category: async(categoryId = '') => {
+    category: async (categoryId = '') => {
         try {
             const response = await fetch(`${BASE_URL}/news/category/${categoryId}`);
             const data = await response.json();

@@ -23,6 +23,7 @@ class Category extends Component {
     async getNewsByCategory() {
         const { category } = this.props.match.params;
         const categoryId = categoriesId[category];
+        console.log(categoryId);
         this.setState({ isLoading: true });
         try {
             const news = await api.category(categoryId);
@@ -40,10 +41,7 @@ class Category extends Component {
         return (
             <div>
                 {isLoading && console.log('cargando...')}
-                {news.length > 0 &&
-                    console.log(categoriesId[category]) &&
-                    console.log(news)
-                }
+                {news.length > 0 && console.log(news)}
             </div>
         )
     }
