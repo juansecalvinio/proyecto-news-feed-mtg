@@ -11,12 +11,6 @@ class NavBar extends Component {
                         <StyledLink to="/">Home</StyledLink>
                     </StyledItem>
                     <StyledItem>
-                        <StyledLink to={{
-                            pathname: "/popular", 
-                            query: "popular"
-                        }}>Popular</StyledLink>
-                    </StyledItem>
-                    <StyledItem>
                         <StyledLink to="/politica">Política</StyledLink>
                     </StyledItem>
                     <StyledItem>

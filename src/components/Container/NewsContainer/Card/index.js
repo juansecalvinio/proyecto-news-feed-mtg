@@ -2,16 +2,16 @@ import React from 'react';
 
 import { StyledCard, StyledImg, StyledContent, StyledTitle, StyledSourceWrapper, StyledTime, StyledDivider, StyledSource } from './styled';
 
-const Card = () => {
+const Card = ({ data }) => {
     return (
         <StyledCard>
-            <StyledImg></StyledImg>
+            <StyledImg src={data.img_url}></StyledImg>
             <StyledContent>
-                <StyledTitle>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe, reprehenderit aut iure, deleniti qui maxime aliquam est odit necessitatibus quos exercitationem ipsum provident eaque sit voluptatem at hic! Illum, quasi.</StyledTitle>
+                <StyledTitle><a href={data.url} rel="noopener">{data.title}</a></StyledTitle>
                 <StyledSourceWrapper>
-                    <StyledTime>10.50</StyledTime>
+                    <StyledTime>{data.date}</StyledTime>
                     <StyledDivider>|</StyledDivider>
-                    <StyledSource>Diario</StyledSource>
+                    <StyledSource>{data.source_name}</StyledSource>
                 </StyledSourceWrapper>
             </StyledContent>
         </StyledCard>

@@ -2,10 +2,10 @@ import React from 'react'
 import { StyledContainer } from './styled';
 import Card from './Card';
 
-const NewsContainer = () => {
+const NewsContainer = (props) => {
     return (
         <StyledContainer>
-            <Card></Card>
+            {props.news.map(data => <Card data={data} key={data.news_id}></Card>)}
         </StyledContainer>
     )
 }

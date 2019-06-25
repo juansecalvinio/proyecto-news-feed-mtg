@@ -14,12 +14,11 @@ export const StyledCard = styled.div`
     display: flex;
 `;
 
-export const StyledImg = styled.div`
+export const StyledImg = styled.img`
     height: 200px;
     max-width: 100%;
     position: relative;
     overflow: hidden;
-    background:  0% 0% / cover rgb(240, 240, 240);
 `;
 
 export const StyledContent = styled.div`

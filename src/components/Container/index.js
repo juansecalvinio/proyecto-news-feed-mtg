@@ -1,15 +1,18 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { StyledContainer, StyledHero, StyledDivider } from './styled';
 import NewsContainer from './NewsContainer';
 
-const Container = () => {
-    return (
-        <StyledContainer>
-            <StyledHero>Category</StyledHero>
-            <StyledDivider></StyledDivider>
-            <NewsContainer />
-        </StyledContainer>
-    )
+class Container extends Component {
+    render() {
+        const { category, news } = this.props;
+        return (
+            <StyledContainer>
+                <StyledHero>{category}</StyledHero>
+                <StyledDivider></StyledDivider>
+                <NewsContainer news={news} />
+            </StyledContainer>
+        )
+    }    
 }
 
 export default Container;

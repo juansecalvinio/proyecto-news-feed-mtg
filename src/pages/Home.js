@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Container from './../components/Container';
 
 import api from './../utils/api';
 
@@ -23,12 +24,9 @@ class Home extends Component {
     }
 
     render() {
-        const { isLoading, latestNews } = this.state;
+        const { latestNews } = this.state;
         return (
-            <div>
-                {isLoading && console.log('cargando...')}
-                {latestNews.length > 0 && console.log(latestNews)}
-            </div>
+            <Container news={latestNews} category={'Home'} />
         )
     }    
 }
