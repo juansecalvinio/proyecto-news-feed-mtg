@@ -9,8 +9,8 @@ export const StyledContainer = styled.div`
 
 export const StyledHero = styled.div`
     font-size: 2em;
-    font-weight: 600;
-    margin-bottom: 20px;
+    font-weight: 700;
+    margin: 10px 0;
     text-transform: capitalize;
 `;
 

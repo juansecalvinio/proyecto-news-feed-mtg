@@ -2,7 +2,6 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
 export const StyledNav = styled.nav`
-    background-color: #fafafa;
     border-top: 1px solid #e5e5e5;
     border-bottom: 1px solid #e5e5e5;    
     display: block;
@@ -32,19 +31,20 @@ export const StyledItem = styled.li`
 `;
 
 export const StyledLink = styled(Link)`
+    background-color: transparent !important;
+    border: none;
+    color: #222222;
     display: flex;
-    font-weight: 600;
+    font-family: "Roboto Mono";
+    font-size: 16px;
+    font-weight: 300;
     letter-spacing: 0.19px;
     padding: 7px 5px;
-    color: #1ABC9C;
-    background-color: transparent !important;
-    font-size: 16px;
-    border: none;
     transition: color .25s ease-in;
     text-decoration: none;
 
     &:hover {
-        color: #ff6473;
+        color: #1ABC9C;
         transition: color .25s ease-out;
     }
 `;

@@ -9,11 +9,17 @@ export const StyledWrapper = styled.div`
 `;
 
 export const StyledInner = styled.div`
+    align-items: center;    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     max-width: 1108px;
     padding: 0 20px;
+    width: 100%;
 `;
 
 export const StyledTitle = styled.h1`
-    color: #1ABC9C;
-    font-weight: 700;
+    color: #222222;
+    font-family: "Roboto Mono";
+    font-weight: 100;
 `;
