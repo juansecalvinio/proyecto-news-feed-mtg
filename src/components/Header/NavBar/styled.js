@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
 export const StyledNav = styled.nav`
-    background-color: white;
+    background-color: #fafafa;
     border-top: 1px solid #e5e5e5;
     border-bottom: 1px solid #e5e5e5;    
     display: block;
@@ -36,7 +36,7 @@ export const StyledLink = styled(Link)`
     font-weight: 600;
     letter-spacing: 0.19px;
     padding: 7px 5px;
-    color: #3b4359;
+    color: #1ABC9C;
     background-color: transparent !important;
     font-size: 16px;
     border: none;

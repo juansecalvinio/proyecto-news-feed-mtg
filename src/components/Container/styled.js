@@ -8,7 +8,7 @@ export const StyledContainer = styled.div`
 `;
 
 export const StyledHero = styled.div`
-    font-size: 52px;
+    font-size: 2em;
     font-weight: 600;
     margin-bottom: 20px;
     text-transform: capitalize;
@@ -17,8 +17,8 @@ export const StyledHero = styled.div`
 export const StyledDivider = styled.span`
     width: 140px;
     height: 3px;
-    background-color: #FC4B63;
+    background-color: #1ABC9C;
     display: block;
     margin: 0 0 30px;
-    background: linear-gradient(to right,#fc4b63 0%,rgba(255,255,255,0.01) 100%);
+    background: linear-gradient(to right,#1ABC9C 0%,rgba(255,255,255,0.01) 100%);
 `;

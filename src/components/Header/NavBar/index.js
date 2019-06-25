@@ -11,19 +11,19 @@ class NavBar extends Component {
                         <StyledLink to="/">Home</StyledLink>
                     </StyledItem>
                     <StyledItem>
-                        <StyledLink to="/politica">Política</StyledLink>
+                        <StyledLink to="/categoria/politica">Política</StyledLink>
                     </StyledItem>
                     <StyledItem>
-                        <StyledLink to="/internacional">Internacional</StyledLink>
+                        <StyledLink to="/categoria/internacional">Internacional</StyledLink>
                     </StyledItem>
                     <StyledItem>
-                        <StyledLink to="/tech">Tech</StyledLink>
+                        <StyledLink to="/categoria/tech">Tech</StyledLink>
                     </StyledItem>
                     <StyledItem>
-                        <StyledLink to="/deportes">Deportes</StyledLink>
+                        <StyledLink to="/categoria/deportes">Deportes</StyledLink>
                     </StyledItem>
                     <StyledItem>
-                        <StyledLink to="/espectaculos">Espectáculos</StyledLink>
+                        <StyledLink to="/categoria/espectaculos">Espectáculos</StyledLink>
                     </StyledItem>
                 </StyledList>
             </StyledNav>

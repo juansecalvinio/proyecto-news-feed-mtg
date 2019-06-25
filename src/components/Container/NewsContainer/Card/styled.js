@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const StyledCard = styled.div`
     box-shadow: rgba(0, 0, 0, 0.25) 0px 20px 40px -14px;
-    width: 100%;
+    width: 30%;
     border-radius: 5px;
     background: white;
     border-width: 1px;
@@ -12,6 +12,13 @@ export const StyledCard = styled.div`
     overflow: hidden;
     transition: all 150ms ease 0s;
     display: flex;
+    flex-direction: column;
+    margin: 1%;
+
+    &:hover, &:focus {
+        transform: scale(1.03);
+        transition: all 0.3s;
+    }
 `;
 
 export const StyledImg = styled.img`

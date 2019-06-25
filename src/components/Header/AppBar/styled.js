@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const StyledWrapper = styled.div`
-    align-items: center;    
+    align-items: center; 
     border-bottom: 0;
     display: flex;
     padding: 24px 0px;
@@ -14,4 +14,6 @@ export const StyledInner = styled.div`
 `;
 
 export const StyledTitle = styled.h1`
+    color: #1ABC9C;
+    font-weight: 700;
 `;

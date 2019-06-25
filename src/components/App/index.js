@@ -25,11 +25,11 @@ function App() {
           <Header />
           <Switch>
             <Route path="/" exact component={Home} />
-            <Route path="/politica" component={Politica} />
-            <Route path="/deportes" component={Deportes} />
-            <Route path="/internacional" component={Internacional} />
-            <Route path="/espectaculos" component={Espectaculos} />
-            <Route path="/tech" component={Tech} />
+            <Route path="/categoria/politica" component={Politica} />
+            <Route path="/categoria/deportes" component={Deportes} />
+            <Route path="/categoria/internacional" component={Internacional} />
+            <Route path="/categoria/espectaculos" component={Espectaculos} />
+            <Route path="/categoria/tech" component={Tech} />
           </Switch>
         </Layout>
     </Router>
