@@ -26,6 +26,16 @@ const api = {
         }
     },
 
+    search: async (searchValue = '') => {
+        try {
+            const response = await fetch(`${BASE_URL}/search/${searchValue}`);
+            const data = await response.json();
+            return data;
+        } catch (error) {
+            console.error(error);
+        }
+    },
+
 }
 
 export default api;

@@ -5,11 +5,12 @@ import './index.css';
 
 import Header from './../Header';
 
-import Home from './../../pages/Home';
-import Politica from './../../pages/Politica';
+import Busqueda from './../../pages/Busqueda';
 import Deportes from './../../pages/Deportes';
-import Internacional from './../../pages/Internacional';
 import Espectaculos from './../../pages/Espectaculos';
+import Home from './../../pages/Home';
+import Internacional from './../../pages/Internacional';
+import Politica from './../../pages/Politica';
 import Tech from './../../pages/Tech';
 
 const Layout = styled.div`
@@ -30,6 +31,7 @@ function App() {
             <Route path="/categoria/internacional" component={Internacional} />
             <Route path="/categoria/espectaculos" component={Espectaculos} />
             <Route path="/categoria/tech" component={Tech} />
+            <Route path="/busqueda/:query" component={Busqueda} />
           </Switch>
         </Layout>
     </Router>
