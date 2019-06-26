@@ -16,8 +16,8 @@ export const StyledCard = styled.div`
     margin: 1%;
 
     &:hover, &:focus {
-        transform: scale(1.03);
-        transition: all 0.3s;
+        transform: scale(1.01);
+        transition: all ease-in-out .2s;
     }
 `;
 
@@ -35,10 +35,19 @@ export const StyledContent = styled.div`
 
 export const StyledTitle = styled.h3`
     font-size: 20px;
-    font-weight: 600;
+    font-weight: 400;
     min-height: 63px;
-    color: rgb(59, 67, 89);
-    transition: color 150ms ease 0s;
+
+    a {
+        color: rgb(59, 67, 89);
+        text-decoration: none;
+        transition: color 150ms ease 0s;
+    }
+
+    a:hover {
+        color: #1ABC9C;
+        transition: color .25s ease-out;
+    }
 `;
 
 export const StyledSourceWrapper = styled.div`
@@ -48,6 +57,12 @@ export const StyledSourceWrapper = styled.div`
     color: rgb(130, 137, 158);
 `;
 
-export const StyledTime = styled.span``;
-export const StyledDivider = styled.span``;
-export const StyledSource = styled.span``;
+export const StyledTime = styled.span`
+    margin-right: 2%;
+`;
+export const StyledDivider = styled.span`
+    margin-right: 2%;
+`;
+export const StyledSource = styled.span`
+    margin-right: 2%;
+`;

@@ -6,6 +6,7 @@ export const StyledWrapper = styled.div`
     display: flex;
     padding: 24px 0px;
     width: 100%;
+    justify-content: space-around;
 `;
 
 export const StyledInner = styled.div`
